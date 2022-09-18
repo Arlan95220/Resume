@@ -28,8 +28,8 @@ color:snow;
 position: fixed;
 left:5%;
 top:4%;
+height:50%;
 width:17%;
-height:28vw;
 clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 font-family:標楷體;
 padding: 0 1vw;
@@ -72,24 +72,23 @@ padding-top:23%;
 clip-path: polygon(0 0, 100% 0, 100% 96%, 0 86%);
 text-align:right;
 }
-.calltext{
-color:snow;
-font-size:2vw;
-padding-right:5%;
-}
 .call{
 border:solid 3px snow;
 background:#DDDDDD;
 position: fixed;
 left:5%;
 width:17%;
-top:27%;
+top:25%;
 bottom:4%;
 }
 form{
 padding-right:10%;
 width:100%;
 }
+textarea{
+margin-bottom:1vw;
+}
+
 .button{
 font-family:微軟正黑體;
 font-size:1vw;
@@ -450,8 +449,13 @@ height:24vw;
 }
 .when{
 font-size:2vw;
-padding: 0 3.4vw;
+text-align:center;
 font-family:標楷體;
+margin:0;
+line-height:4vw;
+}
+#c blockquote{
+	margin:0vw 1vw;
 }
 #c br{
 font-size:0.1vw;
@@ -460,56 +464,53 @@ font-size:0.1vw;
 float:left;
 background:#FF0088;
 border:0.6vw solid snow;
-height:10vw;
-width:13vw;
+width:10vw;
 color:snow;
 font-family:微軟正黑體;
 font-size:1.3vw;
 font-weight:bold;
 padding:0.5vw 0.7vw;
 margin-left:0.5vw;
-margin-top:12vw;
+height:90%;
 }
 .time2{
 float:left;
 background:#FF4500;
 border:0.6vw solid snow;
-height:22vw;
-width:13vw;
+height:90%;
+width:10vw;
 color:snow;
 font-family:微軟正黑體;
 font-size:1.3vw;
 font-weight:bold;
 padding:0.5vw 0.7vw;
-margin-left:14.5vw;
+margin-left:17.5vw;
 }
 .time3{
 float:left;
 background:#32CD32;
 border:0.6vw solid snow;
-height:18vw;
-width:13vw;
+height:100%;
+width:10vw;
 color:snow;
 font-family:微軟正黑體;
 font-size:1.3vw;
 font-weight:bold;
 padding:0.5vw 0.7vw;
 margin-left:15.6vw;
-margin-top:-1vw;
 }
 .time4{
 float:left;
 background:#0000CC;
 border:0.6vw solid snow;
-height:24vw;
-width:13vw;
+height:100%;
+width:10vw;
 color:snow;
 font-family:微軟正黑體;
 font-size:1.3vw;
 font-weight:bold;
 padding:0.5vw 0.7vw;
-margin-left:14.3vw;
-margin-top:-1vw;
+margin-left:17.3vw;
 }
 hr{
 position:absolute;
@@ -583,16 +584,38 @@ padding-bottom:4vw;
 }
 #bigimg{
 display:none;
+position:fixed;
+width:100%;
+height:100%;
+background:#000000e5;
+z-index:15;
 }
-#bigimg button{
-width:2vw;
-height:2vw;
-font-size:1.5vw;
-font-weight:bold;
-margin-left:85%;
-margin-top:3%;
+
+#big{
+position: absolute;
+top: 50%; 
+left:50%;
+transform: translateY(-50%) translateX(-50%);
 }
-#bigimg img{
-width:70%;
-margin-left:15%;
+
+
+
+
+
+@media(min-width: 0px){
+	fieldset{
+	margin-top:20vw;
+	}
+}
+
+@media(min-width: 600px){
+	fieldset{
+	margin-top:15vw;
+	}
+}
+
+@media(min-width: 950px){
+	fieldset{
+	margin-top:20vw;
+	}
 }
